@@ -1,8 +1,18 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "aia"
+main = "worker.ts"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = "dist"
+
+# Automatic Build Command for Worker CI/CD
+[build]
+command = "npm run build"
+
+# Serve Frontend SPA Assets directly in Workers
+[assets]
+directory = "dist"
+html_handling = "auto-trailing-slash"
+not_found_handling = "single-page-application"
 
 # 1. Cloudflare D1 SQL Database Binding
 [[d1_databases]]
@@ -25,3 +35,4 @@ bucket_name = "roohme"
 ADMIN_EMAIL = "roohpro1@gmail.com"
 ENVIRONMENT = "production"
 BASE_DOMAIN = "https://roohpro.com"
+APP_BASE_PATH = "/ai"
