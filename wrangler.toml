@@ -1,6 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "aia"
 main = "worker.ts"
+account_id = "fa73541af4fcdd947ab78c12fe990a34"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 
