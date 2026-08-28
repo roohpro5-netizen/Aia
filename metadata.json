@@ -1,6 +1,6 @@
 {
-  "name": "roohpro Ai المساعد الذكي ",
-  "description": "تطبيق متطور يضم 4 نوافذ للصور والفيديوهات وتحليل الصور مع شبكة إعلانات مدمجة ولوحة تحكم مطور سرية تدعم Groq وملفات عقل الذكاء الاصطناعي JSON.",
+  "name": "roohpro Ai المساعد الذكي",
+  "description": "منصة Rooh AI المتطورة متكاملة مع Cloudflare D1 و KV و R2 ومجهزة للنشر السحابي الفوري.",
   "requestFramePermissions": [],
   "majorCapabilities": [
     "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
