@@ -4,12 +4,6 @@ compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
-# Serve frontend Vite SPA static assets from dist
-[assets]
-directory = "./dist"
-binding = "ASSETS"
-not_found_handling = "single-page-application"
-
 # 1. Cloudflare D1 SQL Database Binding (Real Credentials & Bindings)
 [[d1_databases]]
 binding = "ROOH_D1_DATABASE"
