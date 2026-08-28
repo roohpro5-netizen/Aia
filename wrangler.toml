@@ -1,34 +1,60 @@
+#:schema node_modules/wrangler/config-schema.json
 name = "rooh-ai-platform"
 compatibility_date = "2024-09-23"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = "dist"
 
-# Production Route for Master Domain & AI Application
-# [routes]
-# pattern = "roohpro.com/ai*"
-# zone_name = "roohpro.com"
+# Serve frontend Vite SPA static assets from dist
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "single-page-application"
 
-# Cloudflare R2 Bucket Bindings for Media & HTML Pages Storage
-[[r2_buckets]]
-binding = "ROOH_STORAGE_R2"
-bucket_name = "rooh-media-vault"
-preview_bucket_name = "rooh-media-vault-preview"
-
-# Cloudflare D1 SQL Database Bindings for SEO & Archival
+# 1. Cloudflare D1 SQL Database Binding (Real Credentials & Bindings)
 [[d1_databases]]
 binding = "ROOH_D1_DATABASE"
-database_name = "rooh_d1_db"
-database_id = "ROOH_D1_DATABASE_ID_PLACEHOLDER"
+database_name = "h"
+database_id = "8480585e-443f-4ef9-b4e4-45c941c9dbf1"
 
-# Cloudflare KV Edge Cache Bindings for Fast Prompts & Sitemaps
+[[d1_databases]]
+binding = "h"
+database_name = "h"
+database_id = "8480585e-443f-4ef9-b4e4-45c941c9dbf1"
+
+# 2. Cloudflare KV Namespace Binding (Real Credentials & Bindings)
 [[kv_namespaces]]
 binding = "ROOH_KV_CACHE"
-id = "ROOH_KV_CACHE_ID_PLACEHOLDER"
-preview_id = "ROOH_KV_CACHE_PREVIEW_ID_PLACEHOLDER"
+id = "6d9110610f2c45b09c15d3f2f5dee50a"
 
-# Environment Variables Configuration
+[[kv_namespaces]]
+binding = "ROOH_KV"
+id = "6d9110610f2c45b09c15d3f2f5dee50a"
+
+# 3. Cloudflare R2 Buckets Bindings (Real Bucket roohme & Bindings)
+[[r2_buckets]]
+binding = "ROOH_STORAGE_R2"
+bucket_name = "roohme"
+preview_bucket_name = "roohme"
+
+[[r2_buckets]]
+binding = "ROOH_BUCKET"
+bucket_name = "roohme"
+
+[[r2_buckets]]
+binding = "roohme"
+bucket_name = "roohme"
+
+[[r2_buckets]]
+binding = "rooh_reviews_bucket"
+bucket_name = "roohme"
+
+# Environment Variables & Admin Credentials
 [vars]
+ADMIN_EMAIL = "roohpro1@gmail.com"
+ADMIN_PASSWORD = "admin123"
+DEV_ADMIN_EMAIL = "roohpro1@gmail.com"
 ENVIRONMENT = "production"
 BASE_DOMAIN = "https://roohpro.com"
 APP_BASE_PATH = "/ai"
 MASTER_SITEMAP_URL = "https://roohpro.com/ai/sitemap.xml"
+

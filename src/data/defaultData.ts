@@ -829,22 +829,22 @@ export const INITIAL_DEV_SETTINGS: DevSettings = {
     isConnected: true,
     lastSyncTimestamp: Date.now(),
     r2: {
-      bucketName: 'rooh-media-vault',
+      bucketName: 'roohme',
       accessKeyId: 'r2_key_a8910bcf82',
       secretAccessKey: 'r2_sec_991823abce12876098ffbca',
-      publicDomain: 'https://cdn.rooh.media',
+      publicDomain: 'https://roohpro.com',
       corsEnabled: true
     },
     d1: {
-      databaseId: 'd1-rooh-main-sql-db-001',
-      databaseName: 'rooh_production_db',
+      databaseId: '8480585e-443f-4ef9-b4e4-45c941c9dbf1',
+      databaseName: 'h',
       syncIntervalMinutes: 15,
       autoSync: true,
       lastBackupAt: new Date().toISOString()
     },
     kv: {
-      namespaceId: 'kv_ns_rooh_edge_cache_99',
-      namespaceName: 'ROOH_EDGE_STORE',
+      namespaceId: '6d9110610f2c45b09c15d3f2f5dee50a',
+      namespaceName: 'ROOH_KV',
       edgeTtlSeconds: 86400,
       autoCachePrompts: true
     }
