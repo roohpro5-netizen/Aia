@@ -1,0 +1,11 @@
+# Robots.txt for Rooh Smart AI Windows Platform
+User-agent: *
+Allow: /
+Allow: /ai/
+Allow: /ai/*
+
+# Sitemaps Index for Main Domain Archiving (roohpro.com)
+Sitemap: https://roohpro.com/ai/sitemap.xml
+Sitemap: https://roohpro.com/ai/sitemap-images.xml
+Sitemap: https://roohpro.com/ai/sitemap-videos.xml
+Sitemap: https://roohpro.com/ai/sitemap-index.xml

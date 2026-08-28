@@ -1,0 +1,537 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    background-color: #F8FAFC;
+    color: #0F172A;
+  }
+
+  /* Custom scrollbars with primary colors */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #F1F5F9;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #CBD5E1;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #94A3B8;
+  }
+}
+
+/* 3D Dynamic Neon Portal Number Badge Styles */
+.portal-neon-3d-box {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 0.65rem;
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.12), inset 0 1px 1px rgba(255, 255, 255, 0.7);
+  transform: translateZ(0);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  border-width: 1.5px;
+  border-style: solid;
+}
+
+.portal-neon-3d-box:hover {
+  transform: translateY(-1px) scale(1.03);
+}
+
+.portal-neon-3d-1 {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 50%, #BFDBFE 100%);
+  border-color: #3B82F6;
+  color: #1D4ED8;
+  box-shadow: 0 0 10px rgba(59, 130, 246, 0.35), 0 3px 6px rgba(37, 99, 235, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.portal-neon-3d-2 {
+  background: linear-gradient(135deg, #FAF5FF 0%, #F3E8FF 50%, #E9D5FF 100%);
+  border-color: #A855F7;
+  color: #7E22CE;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.35), 0 3px 6px rgba(147, 51, 234, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.portal-neon-3d-3 {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FEE2E2 50%, #FECACA 100%);
+  border-color: #EF4444;
+  color: #B91C1C;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.35), 0 3px 6px rgba(220, 38, 38, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.portal-neon-3d-4 {
+  background: linear-gradient(135deg, #ECFDF5 0%, #D1FAE5 50%, #A7F3D0 100%);
+  border-color: #10B981;
+  color: #047857;
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.35), 0 3px 6px rgba(5, 150, 105, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.portal-neon-3d-5 {
+  background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 50%, #FDE68A 100%);
+  border-color: #F59E0B;
+  color: #B45309;
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.4), 0 3px 6px rgba(217, 119, 6, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.portal-neon-3d-6 {
+  background: linear-gradient(135deg, #ECFEFF 0%, #CFFAFE 50%, #A5F3FC 100%);
+  border-color: #06B6D4;
+  color: #0E7490;
+  box-shadow: 0 0 10px rgba(6, 182, 212, 0.35), 0 3px 6px rgba(8, 145, 178, 0.2), inset 0 1px 2px rgba(255, 255, 255, 0.9);
+}
+
+.portal-neon-3d-active {
+  background: linear-gradient(135deg, #FEF08A 0%, #FACC15 50%, #EAB308 100%);
+  border-color: #CA8A04;
+  color: #422006;
+  box-shadow: 0 0 14px rgba(234, 179, 8, 0.7), 0 4px 8px rgba(161, 98, 7, 0.35), inset 0 1px 2px rgba(255, 255, 255, 0.95);
+}
+
+.portal-num-3d-disc {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 1.35rem;
+  height: 1.35rem;
+  padding: 0 0.25rem;
+  border-radius: 9999px;
+  background: #FFFFFF;
+  font-weight: 900;
+  font-size: 0.75rem;
+  line-height: 1;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15), inset 0 -1px 2px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.ad-slot-350 {
+  width: 350px;
+  max-width: 100%;
+  min-height: 350px;
+  aspect-ratio: 1 / 1;
+}
+
+/* Premium 3D Header Frame with Dynamic Neon Flow and Depth */
+.header-3d-frame {
+  position: relative;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+  border-bottom: 3.5px solid #3B82F6;
+  animation: headerNeonFlow 4s infinite ease-in-out;
+  transition: all 0.3s ease;
+}
+
+@keyframes headerNeonFlow {
+  0% {
+    box-shadow: 0 6px 20px -2px rgba(37, 99, 235, 0.35), 0 0 16px rgba(59, 130, 246, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border-bottom-color: #2563EB;
+  }
+  33% {
+    box-shadow: 0 6px 22px -2px rgba(234, 179, 8, 0.45), 0 0 18px rgba(250, 204, 21, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border-bottom-color: #EAB308;
+  }
+  66% {
+    box-shadow: 0 6px 22px -2px rgba(239, 68, 68, 0.45), 0 0 18px rgba(248, 113, 113, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border-bottom-color: #EF4444;
+  }
+  100% {
+    box-shadow: 0 6px 20px -2px rgba(37, 99, 235, 0.35), 0 0 16px rgba(59, 130, 246, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    border-bottom-color: #2563EB;
+  }
+}
+
+.header-3d-frame::after {
+  content: '';
+  position: absolute;
+  bottom: -4.5px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #2563EB 0%, #EAB308 50%, #EF4444 100%);
+  opacity: 0.95;
+  filter: drop-shadow(0 0 4px rgba(234, 179, 8, 0.6));
+}
+
+/* Tri-color stripe component */
+.tricolor-bar {
+  display: flex;
+  height: 3.5px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+.tricolor-bar > span:nth-child(1) {
+  flex: 1;
+  background-color: #2563EB; /* Blue */
+}
+.tricolor-bar > span:nth-child(2) {
+  flex: 1;
+  background-color: #EAB308; /* Yellow */
+}
+.tricolor-bar > span:nth-child(3) {
+  flex: 1;
+  background-color: #EF4444; /* Red */
+}
+
+/* Dynamic Neon Glowing Borders */
+@keyframes neonPulse1 {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(37, 99, 235, 0.45), 0 0 20px rgba(59, 130, 246, 0.3), inset 0 0 10px rgba(37, 99, 235, 0.15);
+    border-color: #3B82F6;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(37, 99, 235, 0.75), 0 0 32px rgba(96, 165, 250, 0.5), inset 0 0 14px rgba(37, 99, 235, 0.25);
+    border-color: #60A5FA;
+  }
+}
+
+@keyframes neonPulse2 {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(147, 51, 234, 0.45), 0 0 20px rgba(192, 132, 252, 0.3), inset 0 0 10px rgba(147, 51, 234, 0.15);
+    border-color: #9333EA;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(147, 51, 234, 0.75), 0 0 32px rgba(216, 180, 254, 0.5), inset 0 0 14px rgba(147, 51, 234, 0.25);
+    border-color: #C084FC;
+  }
+}
+
+@keyframes neonPulse3 {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(239, 68, 68, 0.45), 0 0 20px rgba(245, 158, 11, 0.35), inset 0 0 10px rgba(239, 68, 68, 0.15);
+    border-color: #EF4444;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(239, 68, 68, 0.8), 0 0 32px rgba(251, 191, 36, 0.55), inset 0 0 14px rgba(239, 68, 68, 0.3);
+    border-color: #F59E0B;
+  }
+}
+
+@keyframes neonPulse4 {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(16, 185, 129, 0.45), 0 0 20px rgba(52, 211, 153, 0.3), inset 0 0 10px rgba(16, 185, 129, 0.15);
+    border-color: #10B981;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(16, 185, 129, 0.75), 0 0 32px rgba(110, 231, 183, 0.5), inset 0 0 14px rgba(16, 185, 129, 0.25);
+    border-color: #34D399;
+  }
+}
+
+@keyframes neonPulse5 {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(249, 115, 22, 0.45), 0 0 20px rgba(251, 146, 60, 0.3), inset 0 0 10px rgba(249, 115, 22, 0.15);
+    border-color: #F97316;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(249, 115, 22, 0.75), 0 0 32px rgba(253, 186, 116, 0.5), inset 0 0 14px rgba(249, 115, 22, 0.25);
+    border-color: #FB923C;
+  }
+}
+
+@keyframes neonPulse6 {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(100, 116, 139, 0.45), 0 0 20px rgba(148, 163, 184, 0.3), inset 0 0 10px rgba(100, 116, 139, 0.15);
+    border-color: #64748B;
+  }
+  50% {
+    box-shadow: 0 0 18px rgba(148, 163, 184, 0.75), 0 0 32px rgba(226, 232, 240, 0.6), inset 0 0 14px rgba(100, 116, 139, 0.25);
+    border-color: #94A3B8;
+  }
+}
+
+.neon-card-1 {
+  border-width: 2.5px !important;
+  animation: neonPulse1 3s infinite ease-in-out;
+}
+
+.neon-card-2 {
+  border-width: 2.5px !important;
+  animation: neonPulse2 3s infinite ease-in-out;
+}
+
+.neon-card-3 {
+  border-width: 2.5px !important;
+  animation: neonPulse3 3s infinite ease-in-out;
+}
+
+.neon-card-4 {
+  border-width: 2.5px !important;
+  animation: neonPulse4 3s infinite ease-in-out;
+}
+
+.neon-card-5 {
+  border-width: 2.5px !important;
+  animation: neonPulse5 3s infinite ease-in-out;
+}
+
+.neon-card-6 {
+  border-width: 2.5px !important;
+  animation: neonPulse6 3s infinite ease-in-out;
+}
+
+/* 3D Dynamic Push Button for Entering Windows / Portals ("بدء") */
+.btn-3d-start {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 1.15rem;
+  font-size: 0.85rem;
+  font-weight: 900;
+  color: #ffffff;
+  border-radius: 0.75rem;
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  cursor: pointer;
+  user-select: none;
+  letter-spacing: 0.05em;
+  overflow: hidden;
+}
+
+.btn-3d-start::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 40%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 0.65rem 0.65rem 0 0;
+  pointer-events: none;
+}
+
+/* Portal 1: Blue 3D */
+.btn-3d-portal-1 {
+  background: linear-gradient(180deg, #3B82F6 0%, #1D4ED8 100%);
+  border: 1.5px solid #93C5FD;
+  box-shadow: 0 4px 0 #1E3A8A, 0 6px 12px rgba(37, 99, 235, 0.4);
+}
+.btn-3d-portal-1:hover {
+  background: linear-gradient(180deg, #60A5FA 0%, #2563EB 100%);
+  box-shadow: 0 5px 0 #1E3A8A, 0 8px 16px rgba(37, 99, 235, 0.5);
+  transform: translateY(-2px);
+}
+.btn-3d-portal-1:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #1E3A8A, 0 2px 4px rgba(37, 99, 235, 0.25);
+}
+
+/* Portal 2: Purple 3D */
+.btn-3d-portal-2 {
+  background: linear-gradient(180deg, #9333EA 0%, #7E22CE 100%);
+  border: 1.5px solid #D8B4FE;
+  box-shadow: 0 4px 0 #581C87, 0 6px 12px rgba(147, 51, 234, 0.4);
+}
+.btn-3d-portal-2:hover {
+  background: linear-gradient(180deg, #A855F7 0%, #9333EA 100%);
+  box-shadow: 0 5px 0 #581C87, 0 8px 16px rgba(147, 51, 234, 0.5);
+  transform: translateY(-2px);
+}
+.btn-3d-portal-2:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #581C87, 0 2px 4px rgba(147, 51, 234, 0.25);
+}
+
+/* Portal 3: Red/Gold 3D */
+.btn-3d-portal-3 {
+  background: linear-gradient(180deg, #EF4444 0%, #B91C1C 100%);
+  border: 1.5px solid #FCA5A5;
+  box-shadow: 0 4px 0 #7F1D1D, 0 6px 12px rgba(239, 68, 68, 0.4);
+}
+.btn-3d-portal-3:hover {
+  background: linear-gradient(180deg, #F87171 0%, #DC2626 100%);
+  box-shadow: 0 5px 0 #7F1D1D, 0 8px 16px rgba(239, 68, 68, 0.5);
+  transform: translateY(-2px);
+}
+.btn-3d-portal-3:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #7F1D1D, 0 2px 4px rgba(239, 68, 68, 0.25);
+}
+
+/* Portal 4: Emerald Green 3D */
+.btn-3d-portal-4 {
+  background: linear-gradient(180deg, #10B981 0%, #047857 100%);
+  border: 1.5px solid #6EE7B7;
+  box-shadow: 0 4px 0 #064E3B, 0 6px 12px rgba(16, 185, 129, 0.4);
+}
+.btn-3d-portal-4:hover {
+  background: linear-gradient(180deg, #34D399 0%, #059669 100%);
+  box-shadow: 0 5px 0 #064E3B, 0 8px 16px rgba(16, 185, 129, 0.5);
+  transform: translateY(-2px);
+}
+.btn-3d-portal-4:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #064E3B, 0 2px 4px rgba(16, 185, 129, 0.25);
+}
+
+/* Portal 5: Orange 3D */
+.btn-3d-portal-5 {
+  background: linear-gradient(180deg, #F97316 0%, #C2410C 100%);
+  border: 1.5px solid #FDBA74;
+  box-shadow: 0 4px 0 #7C2D12, 0 6px 12px rgba(249, 115, 22, 0.4);
+}
+.btn-3d-portal-5:hover {
+  background: linear-gradient(180deg, #FB923C 0%, #EA580C 100%);
+  box-shadow: 0 5px 0 #7C2D12, 0 8px 16px rgba(249, 115, 22, 0.5);
+  transform: translateY(-2px);
+}
+.btn-3d-portal-5:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #7C2D12, 0 2px 4px rgba(249, 115, 22, 0.25);
+}
+
+/* Portal 6: Silver/Slate 3D */
+.btn-3d-portal-6 {
+  background: linear-gradient(180deg, #64748B 0%, #334155 100%);
+  border: 1.5px solid #CBD5E1;
+  box-shadow: 0 4px 0 #0F172A, 0 6px 12px rgba(100, 116, 139, 0.4);
+}
+.btn-3d-portal-6:hover {
+  background: linear-gradient(180deg, #94A3B8 0%, #475569 100%);
+  box-shadow: 0 5px 0 #0F172A, 0 8px 16px rgba(100, 116, 139, 0.5);
+  transform: translateY(-2px);
+}
+.btn-3d-portal-6:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #0F172A, 0 2px 4px rgba(100, 116, 139, 0.25);
+}
+
+/* Premium 3D Subscribe Button (Golden Amber Luxury Style) */
+.btn-3d-subscribe {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: #78350F;
+  border-radius: 0.85rem;
+  background: linear-gradient(180deg, #FDE68A 0%, #F59E0B 100%);
+  border: 1.5px solid #FEF3C7;
+  box-shadow: 0 4px 0 #B45309, 0 6px 16px rgba(245, 158, 11, 0.45);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+}
+.btn-3d-subscribe::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 0.75rem 0.75rem 0 0;
+  pointer-events: none;
+}
+.btn-3d-subscribe:hover {
+  background: linear-gradient(180deg, #FEF08A 0%, #D97706 100%);
+  box-shadow: 0 5px 0 #B45309, 0 8px 20px rgba(245, 158, 11, 0.6);
+  transform: translateY(-2px);
+  color: #451A03;
+}
+.btn-3d-subscribe:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #B45309, 0 2px 4px rgba(245, 158, 11, 0.3);
+}
+
+/* Premium 3D Subscribed State Button (Emerald Neon Active Style) */
+.btn-3d-subscribed {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: #064E3B;
+  border-radius: 0.85rem;
+  background: linear-gradient(180deg, #A7F3D0 0%, #10B981 100%);
+  border: 1.5px solid #D1FAE5;
+  box-shadow: 0 4px 0 #047857, 0 0 16px rgba(16, 185, 129, 0.55);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+}
+.btn-3d-subscribed::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 0.75rem 0.75rem 0 0;
+  pointer-events: none;
+}
+.btn-3d-subscribed:hover {
+  background: linear-gradient(180deg, #6EE7B7 0%, #059669 100%);
+  box-shadow: 0 5px 0 #047857, 0 0 22px rgba(16, 185, 129, 0.75);
+  transform: translateY(-2px);
+  color: #022C22;
+}
+.btn-3d-subscribed:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #047857, 0 2px 4px rgba(16, 185, 129, 0.3);
+}
+
+/* Premium 3D Home Button (Nav Return Style) */
+.btn-3d-home {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 900;
+  color: #ffffff;
+  border-radius: 0.85rem;
+  background: linear-gradient(180deg, #3B82F6 0%, #1D4ED8 100%);
+  border: 1.5px solid #93C5FD;
+  box-shadow: 0 4px 0 #1E3A8A, 0 6px 14px rgba(37, 99, 235, 0.45);
+  transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(0);
+  cursor: pointer;
+  user-select: none;
+  overflow: hidden;
+}
+.btn-3d-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.45) 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 0.75rem 0.75rem 0 0;
+  pointer-events: none;
+}
+.btn-3d-home:hover {
+  background: linear-gradient(180deg, #60A5FA 0%, #2563EB 100%);
+  box-shadow: 0 5px 0 #1E3A8A, 0 8px 18px rgba(37, 99, 235, 0.55);
+  transform: translateY(-2px);
+}
+.btn-3d-home:active {
+  transform: translateY(3px);
+  box-shadow: 0 1px 0 #1E3A8A, 0 2px 4px rgba(37, 99, 235, 0.25);
+}
+

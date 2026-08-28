@@ -1,0 +1,9 @@
+# Cloudflare Pages SPA Routing Rules
+# Main application entry point & base paths
+/ai/*    /index.html   200
+/ai      /index.html   200
+/item/*  /index.html   200
+/window/* /index.html  200
+
+# Catch-all SPA route
+/*       /index.html   200
