@@ -12,11 +12,11 @@
 
 وقم بإضافة المتغيرات السرية التالية:
 
-| اسم السر (Secret Name) | الوصف | المصدر |
-| :--- | :--- | :--- |
-| `CLOUDFLARE_API_TOKEN` | توكن الـ API الخاص بحسابك على Cloudflare مع صلاحيات `Cloudflare Pages (Edit)` | من لوحة Cloudflare -> My Profile -> API Tokens |
-| `CLOUDFLARE_ACCOUNT_ID` | معرّف الحساب الرئيسي (Account ID) | من الشريط الجانبي في لوحة Cloudflare |
-| `GEMINI_API_KEY` | مفتاح Google Gemini API لتوليد البرومبتات وهندسة الأوامر | Google AI Studio |
+| اسم السر (Secret Name) | البديل المدعوم | الوصف | المصدر |
+| :--- | :--- | :--- | :--- |
+| `CLOUDFLARE_API_TOKEN` | `CF_TOKEN` | توكن الـ API الخاص بحسابك على Cloudflare مع صلاحيات `Cloudflare Pages (Edit)` | من لوحة Cloudflare -> My Profile -> API Tokens |
+| `CLOUDFLARE_ACCOUNT_ID` | `CF_ACCOUNT_ID` | معرّف الحساب الرئيسي (Account ID) | من الشريط الجانبي في لوحة Cloudflare |
+| `GEMINI_API_KEY` | — | مفتاح Google Gemini API لتوليد البرومبتات وهندسة الأوامر | Google AI Studio |
 
 ---
 
